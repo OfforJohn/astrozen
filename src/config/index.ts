@@ -28,7 +28,7 @@ export const SITE_CONTENT: SiteContent = {
     specialty: "Mobile & Web Developer",
     summary:
       "Developer based in Lagos, Nigeria. I specialize in UI design, web and mobile application development and maintenance.",
-    email: "example@email.com",
+    email: "offorchukwuebuka8@email.com",
   },
 
 
