@@ -12,39 +12,46 @@ const { projects } = Astro.props;
 
 <Section text="Featured Projects" href="projects">
   {
-    projects.map(({ name, summary, image, linkPreview, linkSource }, index) => {
+    projects.map(({ name, summary, image, linkPreview }, index) => {
       const top = 98 + index * 40;
+
       return (
-        <div
+        <a
+          href={linkPreview}
+          target="_blank"
           style={`top: ${top}px;`}
-          class="sticky mb-12 rounded-2xl border border-neutral/20 bg-black"
+          class="group block sticky mb-12 rounded-2xl border border-neutral/20 bg-black transition-all hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10"
         >
-          <div class="bg-difu relative z-[1] grid h-[580px] w-full grid-rows-2 rounded-2xl bg-[#1c232d]/85 before:absolute before:inset-0 before:z-[-1] before:rounded-2xl before:bg-[url(/raja.png)] before:bg-[length:128px] before:bg-repeat before:opacity-[5%] before:content-[''] sm:grid-cols-2 sm:grid-rows-1 md:h-96">
-            <div class="px-6 pt-12">
-              <h3 class="mb-5 font-serif text-3xl font-medium text-primary">
+          <div class="relative z-[1] grid h-[580px] w-full grid-rows-2 rounded-2xl bg-[#1c232d]/85 
+                      before:absolute before:inset-0 before:z-[-1] before:rounded-2xl 
+                      before:bg-[url(/raja.png)] before:bg-[length:128px] before:bg-repeat 
+                      before:opacity-[5%] before:content-[''] sm:grid-cols-2 sm:grid-rows-1 md:h-96">
+
+            <!-- TEXT -->
+            <div class="px-6 pt-12 flex flex-col">
+              <h3 class="mb-5 font-serif text-3xl font-medium text-primary group-hover:text-primary/80 transition">
                 {name}
               </h3>
-              <p class="text-base text-neutral">{summary}</p>
-              <div class="flex gap-5 pt-10 text-white">
-                <a
-                  href={linkSource}
-                  target="_blank"
-                  class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
+
+              <p class="text-base text-neutral flex-grow">
+                {summary}
+              </p>
+
+              <!-- Preview Button (still visible INSIDE the card) -->
+              <div class="pt-10">
+                <span
+                  class="inline-flex items-center gap-2 rounded-full bg-primary/20 px-5 py-2 text-sm font-medium text-primary transition-all group-hover:bg-primary/30"
                 >
-                  Source
-                </a>
-                <a
-                  href={linkPreview}
-                  target="_blank"
-                  class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
-                >
-                  Preview
-                </a>
+                  Preview Project
+                  <img src="/external.svg" class="w-3 h-3" />
+                </span>
               </div>
             </div>
+
+            <!-- IMAGE -->
             <div class="flex items-end justify-end overflow-hidden">
               <Image
-                class="h-full w-[95%] rounded-ss-xl rounded-ee-2xl object-none object-left-top sm:h-[85%] sm:w-full"
+                class="h-full w-[95%] rounded-ss-xl rounded-ee-2xl object-none object-left-top sm:h-[85%] sm:w-full group-hover:scale-105 transition-all duration-300"
                 src={image}
                 alt={name}
                 width="736"
@@ -52,7 +59,7 @@ const { projects } = Astro.props;
               />
             </div>
           </div>
-        </div>
+        </a>
       );
     })
   }

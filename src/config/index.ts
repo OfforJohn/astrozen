@@ -4,7 +4,7 @@ export const SITE_CONFIG: SiteConfig = {
   title: "Soft-tech — Mobile & Web Developer",
   author: "Offor John",
   description:
-    "Software Engineer based in Lagos, Nigeria. I specialize in UI design, web and mobile application development and maintenance.",
+    "Software Engineer based in Lagos, Nigeria, specializing in UI design, web development, and mobile application development and maintenance.",
   lang: "en",
   siteLogo: "/john.jpg",
   navLinks: [
@@ -14,9 +14,8 @@ export const SITE_CONFIG: SiteConfig = {
   ],
   socialLinks: [
     { text: "Twitter", href: "https://x.com/OfforJohn7" },
- 
     { text: "Github", href: "https://github.com/OfforJohn" },
-    {text: "whatsapp", href: "https://wa.me/+2347063540922" },
+    { text: "WhatsApp", href: "https://wa.me/+2347063540922" },
   ],
   socialImage: "/zen-og.png",
   canonicalURL: "https://astro-zen.vercel.app",
@@ -24,85 +23,82 @@ export const SITE_CONFIG: SiteConfig = {
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Soft-Tech solutions",
+    name: "Soft-Tech Solutions",
     specialty: "Mobile & Web Developer",
     summary:
-      "Developer based in Lagos, Nigeria. I specialize in UI design, web and mobile application development and maintenance.",
+      "Developer based in Lagos, Nigeria, specializing in UI design, web development, and mobile application development.",
     email: "offorchukwuebuka8@email.com",
   },
 
-
-experience: [
-  {
-    company: "Cushy Access",
-    position: "Lead Android Developer",
-    startDate: "May 2018",
-    endDate: "Sept 2020",
-    summary: [
-      "Developed a real-time chat application similar to the WhatsApp Clone with AI project, leveraging WebSocket technology to enable instant messaging between users.",
-      "Integrated AI-powered bots that automatically respond within specified time intervals, enhancing user interaction and engagement within the app.",
-      "Optimized app performance and layout for large-screen devices based on client requirements, ensuring a seamless and responsive user experience.",
-      "Collaborated with backend engineers to manage API integrations, real-time message storage, and socket communication for reliable data flow.",
-    ],
-  },
-  {
-    company: "SynergyLive",
-    position: "Mobile Developer",
-    startDate: "Feb 2017",
-    endDate: "May 2018",
-    summary: [
-      "Contributed to the development of an LMS platform similar to SynergyLive, where users could purchase courses, learn at their own pace, and upload content as instructors.",
-      "Implemented features for user authentication, payment workflows, and content management to support secure and efficient course transactions.",
-      "Worked with RESTful APIs to manage video streaming, course data, and instructor dashboards, ensuring smooth content delivery and scalability.",
-      "Collaborated with UI/UX designers to build a clean and intuitive interface that provided an engaging learning experience across devices.",
-    ],
-  },
-  {
-    company: "Highscore EdTech",
-    position: "Frontend Developer",
-    startDate: "Jun 2015",
-    endDate: "Oct 2016",
-    summary: [
-      "Developed and maintained frontend pages for the Highscore EdTech learning platform, featuring colorful and engaging UI components for students.",
-      "Built and integrated quiz and leaderboard systems that allowed students to practice past questions, participate in live quizzes, and win rewards.",
-      "Consumed APIs to fetch and display quiz questions, update scores in real-time, and track user progress.",
-      "Collaborated with backend developers to ensure smooth synchronization between the frontend and server for live updates and data consistency.",
-    ],
-  },
-],
-
+  experience: [
+    {
+      company: "Cushy Access",
+      position: "Lead Android Developer",
+      startDate: "May 2018",
+      endDate: "Sept 2020",
+      summary: [
+        "Developed a real-time chat application featuring WebSocket-driven instant messaging and dynamic UI similar to WhatsApp-level experiences.",
+        "Integrated AI-powered automated responders that reply within predefined intervals to enhance overall user engagement.",
+        "Optimized the app’s layout for large-screen devices, delivering a seamless and responsive user experience across form factors.",
+        "Collaborated with backend teams to integrate APIs, manage real-time message storage, and maintain stable socket communication.",
+      ],
+    },
+    {
+      company: "SynergyLive",
+      position: "Mobile Developer",
+      startDate: "Feb 2017",
+      endDate: "May 2018",
+      summary: [
+        "Contributed to the development of an LMS platform where users could purchase courses, learn at their own pace, and upload content as instructors.",
+        "Implemented workflows for authentication, payment integration, course management, and content delivery.",
+        "Integrated RESTful APIs to handle video streaming, course data, dashboards, and scalable content management.",
+        "Collaborated with UI/UX designers to build a clean, intuitive interface ensuring a smooth and engaging user experience across devices.",
+      ],
+    },
+    {
+      company: "Highscore EdTech",
+      position: "Frontend Developer",
+      startDate: "Jun 2015",
+      endDate: "Oct 2016",
+      summary: [
+        "Developed and maintained frontend pages for the Highscore EdTech learning platform, focusing on interactive and visually engaging student interfaces.",
+        "Built and integrated quiz systems and leaderboards that allowed students to practice questions and participate in real-time competitions.",
+        "Consumed APIs to fetch quiz content, update scores in real-time, and track user progress.",
+        "Worked closely with backend developers to ensure smooth synchronization between frontend data and server-side updates.",
+      ],
+    },
+  ],
 
   projects: [
     {
-      name: "WhatsApp Clone With AI",
-      summary: "Although not responsive as its only displays well on larger screen as per clients request I Leveraged on websocket to create this cloone. It has the ability for real time chatting using websocket. Users can create bots with specified name, send messages to the bot and the bots reply within specified time.",
-      linkPreview: "https://whatsapp-clone3.vercel.app/",
-
-      image: "/whats appclone.PNG",
+      name: "Netflix Clone",
+      summary:
+        "A Netflix-inspired streaming platform featuring a modern UI, movie categories, dynamic data loading, and smooth navigation. Designed to replicate the Netflix experience with custom styling and responsive layouts optimized for both mobile and large screens.",
+      linkPreview: "https://nexflix-clone3.vercel.app",
+      image: "/txtx.PNG",
     },
     {
-      name: "Synergylive",
-      summary: "An Udemy like application An LMS platform where users can purchase courses and learn at their own pace. Users can also create an account and become instructors to upload courses for sale.  ",
-      linkPreview: "/https://synergylive.vercel.app/",
-
+      name: "SynergyLive",
+      summary:
+        "A full LMS platform similar to Udemy, allowing users to purchase courses, learn at their own pace, and upload their own courses as instructors. Includes authentication, video streaming, dashboards, and a clean, responsive UI.",
+      linkPreview: "https://synergylive.vercel.app/",
       image: "/synergylive.PNG",
     },
     {
-      name: "highscore-edtech",
-      summary: "A Learning platform for students also with colourfull UI students can practice past questions and also take part in live quizzes win awesome prices.",
-      linkPreview: "/",
-
-      image: "/highscore ed tech.PNG",
+      name: "Highscore EdTech",
+      summary:
+        "A vibrant learning platform for students featuring past-question practice, colorful UI, and real-time quiz competitions with rewards. Includes leaderboards, question banks, and a responsive user dashboard.",
+      linkPreview: "https://highscore-edtech-2.onrender.com/",
+      image: "/highscore-edtech.PNG",
     },
   ],
+
   about: {
     description: `
-      Hi, I’m Offor-Chukwuebuka John, a passionate Mobile and Web Developer with a knack for crafting seamless digital experiences. With a strong background in both Android and iOS development, as well as front-end web technologies, I thrive in the intersection where creativity meets technology.
+      Hi, I’m Offor-Chukwuebuka John, a passionate Mobile and Web Developer with a strong foundation in Android, iOS, and modern web technologies. I enjoy building seamless digital experiences that combine clean UI design with robust, scalable engineering.
 
-      Over the years, I’ve honed my skills in building robust, user-friendly applications that not only meet the needs of users but also push the boundaries of what’s possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
+      Over the years, I’ve worked on a wide range of digital products—from cross-platform mobile apps to responsive web platforms—always focusing on performance, usability, and long-term maintainability.
     `,
     image: "/john.jpg",
   },
 };
-
-// #5755ff
