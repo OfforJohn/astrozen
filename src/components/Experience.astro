@@ -1,10 +1,13 @@
 ---
 // No need to import Astro Image if using <img>
 import Section from "./Section.astro";
-import type { AboutProps, HeroProps } from "@types";
+import type { AboutProps, ExperienceProps, HeroProps } from "@types";
 
-type Props = AboutProps & Pick<HeroProps, "name">;
-const { description, name } = Astro.props;
+interface Props {
+  experience: ExperienceProps[];
+}
+
+
 ---
 
 <Section text="Meet Hadda'u" href="about">
