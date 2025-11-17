@@ -18,7 +18,7 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "WhatsApp", href: "https://wa.me/+2347063540922" },
   ],
   socialImage: "/zen-og.png",
-  canonicalURL: "https://astro-zen.vercel.app",
+  canonicalURL: "https://soft-tech-solutions.vercel.app",
 };
 
 export const SITE_CONTENT: SiteContent = {
