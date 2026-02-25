@@ -88,7 +88,7 @@ export const SITE_CONTENT: SiteContent = {
       name: "Highscore EdTech",
       summary:
         "A vibrant learning platform for students featuring past-question practice, colorful UI, and real-time quiz competitions with rewards. Includes leaderboards, question banks, and a responsive user dashboard.",
-      linkPreview: "https://highscore-edtech-10.vercel.app/",
+      linkPreview: "https://www.highscoreedtech.com/",
       image: "/highscore-edtech.PNG",
     },
   ],
