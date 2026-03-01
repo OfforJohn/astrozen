@@ -11,15 +11,22 @@ const { siteLogo, navLinks } = Astro.props;
 <header
   class="sticky top-0 z-50 mx-auto flex max-w-5xl animate-slide-in justify-between bg-black px-5 py-6"
 >
-  <a href="/" aria-label="Home link">
-    <Image
-      class="rounded-full"
-      src={siteLogo}
-      width="45"
-      height="45"
-      alt="website logo"
-    />
-  </a>
+  {siteLogo && (
+    <a href="/" aria-label="Home link">
+      <Image
+        class="rounded-full"
+        src={siteLogo}
+        width="45"
+        height="45"
+        alt="website logo"
+      />
+    </a>
+  )}
+  {!siteLogo && (
+    <a href="/" aria-label="Home link" class="font-bold text-white text-lg">
+      Portfolio
+    </a>
+  )}
 
   <button
     type="button"

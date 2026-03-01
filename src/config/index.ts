@@ -1,21 +1,18 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Soft-tech — Mobile & Web Developer",
-  author: "Offor John",
+  title: "Soft-Tech Solutions - Mobile & Web Developer",
+  author: "Soft-Tech Solutions",
   description:
-    "Software Engineer based in Lagos, Nigeria, specializing in UI design, web development, and mobile application development and maintenance.",
+    "Professional web development, mobile app development, and UI/UX design services. Transforming rural talent into global tech power.",
   lang: "en",
-  siteLogo: "/john.jpg",
+  siteLogo: "",
   navLinks: [
-    { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
     { text: "About", href: "#about" },
   ],
   socialLinks: [
-    { text: "Twitter", href: "https://x.com/OfforJohn7" },
-    { text: "Github", href: "https://github.com/OfforJohn" },
-    { text: "WhatsApp", href: "https://wa.me/+2347063540922" },
+    { text: "WhatsApp", href: "https://wa.me/+2347025459649" },
   ],
   socialImage: "/zen-og.png",
   canonicalURL: "https://soft-tech-solutions.vercel.app",
@@ -27,7 +24,7 @@ export const SITE_CONTENT: SiteContent = {
     specialty: "Mobile & Web Developer",
     summary:
       "Developer based in Lagos, Nigeria, specializing in UI design, web development, and mobile application development.",
-    email: "offorchukwuebuka8@email.com",
+    email: "contact@soft-tech.com",
   },
 
   experience: [
@@ -71,13 +68,6 @@ export const SITE_CONTENT: SiteContent = {
 
   projects: [
     {
-      name: "Netflix Clone",
-      summary:
-        "A Netflix-inspired streaming platform featuring a modern UI, movie categories, dynamic data loading, and smooth navigation. Designed to replicate the Netflix experience with custom styling and responsive layouts optimized for both mobile and large screens.",
-      linkPreview: "https://nexflix-clone3.vercel.app",
-      image: "/txtx.PNG",
-    },
-    {
       name: "SynergyLive",
       summary:
         "A full LMS platform similar to Udemy, allowing users to purchase courses, learn at their own pace, and upload their own courses as instructors. Includes authentication, video streaming, dashboards, and a clean, responsive UI.",
@@ -95,10 +85,8 @@ export const SITE_CONTENT: SiteContent = {
 
   about: {
     description: `
-      Hi, I’m Offor-Chukwuebuka John, a passionate Mobile and Web Developer with a strong foundation in Android, iOS, and modern web technologies. I enjoy building seamless digital experiences that combine clean UI design with robust, scalable engineering.
-
-      Over the years, I’ve worked on a wide range of digital products—from cross-platform mobile apps to responsive web platforms—always focusing on performance, usability, and long-term maintainability.
+      Add your about section here. Share your background, skills, and what you're passionate about.
     `,
-    image: "/john.jpg",
+    image: "",
   },
 };
